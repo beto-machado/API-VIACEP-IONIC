@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'viacep',
+    loadChildren: () => import('./viacep/viacep.module').then( m => m.ViacepPageModule)
+  },
 ];
 
 @NgModule({

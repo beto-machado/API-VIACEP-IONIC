@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>viacep</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-input type="text" placeholder="Digite o CEP" [{ngModel}]="cep"></ion-input>
+
+  <ion-button (click)="consultaCep()" expand="block" shape="round">
+    Consulta Cep
+  </ion-button>
+
+  <h5>Logradouro</h5>
+  <h6>{{ endereco.cep }}</h6>
+  <h6>{{ endereco.logradouro }}</h6>
+  <h6>{{ endereco.bairro }}</h6>
+  <h6>{{ endereco.localidade }}</h6>
+
+
+</ion-content>
